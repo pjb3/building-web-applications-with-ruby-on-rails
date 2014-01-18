@@ -1,0 +1,15 @@
+<nav>
+  <ul>
+    <li class="prev">
+      {% if page.prev_page.title %}
+        <a href="{{ page.prev_page.path }}">{{ page.prev_page.title }} &laquo;</a>
+      {% endif %}
+    </li>
+    <li><a href="/chapters">Table of Contents</a></li>
+    <li class="next">
+      {% if page.next_page.title %}
+        <a href="{{ page.next_page.path }}">{{ page.next_page.title }} &raquo;</a>
+      {% endif %}
+    </li>
+  </ul>
+</nav>

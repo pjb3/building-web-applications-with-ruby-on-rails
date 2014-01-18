@@ -25,7 +25,7 @@ p { margin: 1em 0; line-height: 1.5em; }
 
 a         { color: #00a; }
 a:hover   { color: #00a; }
-a:visited { color: #a0a; }
+a:visited { color: #00a; }
 
 pre {
   font-family: Monaco, "Courier New", monospace;
@@ -39,6 +39,7 @@ pre {
 
 .site {
   width: 960px;
+  min-height: 800px;
   margin: 20px auto;
 }
 
@@ -49,7 +50,7 @@ pre {
 
 .site h2 {
   font-weight: normal;
-  font-size: 2.0em;
+  font-size: 1.8em;
 }
 
 .site h1 a,
@@ -71,6 +72,64 @@ pre {
 .site h2 a:hover,
 .site h3 a:hover {
   text-decoration: underline;
+}
+
+.site nav {
+  width: 100%;
+  display: table;
+}
+
+.site nav ul {
+  list-style-type: none;
+  display: table-row;
+  margin: 0;
+  padding: 0;
+}
+
+.site nav ul li {
+  display: table-cell;
+  width: 33%;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.site nav ul li.prev {
+  text-align: left;
+}
+
+.site nav ul li.next {
+  text-align: right;
+}
+
+.site article {
+  min-height: 600px;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+  line-height: 0px;
+}
+
+sup a {
+  text-decoration: none;
+  text-color: #00a;
+  padding: 3px;
+}
+
+sup a:hover {
+  text-decoration: underline;
+}
+
+ol.footnotes {
+  border-top: 1px solid #aaa;
+  margin: 0;
+  padding: 1em 0 1em 2em;
+}
+
+ol.footnotes li {
+  margin: 0;
+  padding: 0;
 }
 
 footer {
