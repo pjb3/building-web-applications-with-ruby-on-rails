@@ -31,6 +31,10 @@ pre {
   font-family: Monaco, "Courier New", monospace;
 }
 
+img {
+  margin: 20px 0;
+}
+
 /*****************************************************************************/
 /*
 /* Site
