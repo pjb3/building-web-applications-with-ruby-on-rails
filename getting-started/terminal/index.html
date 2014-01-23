@@ -1,12 +1,9 @@
 ---
 layout: page
-title: Getting Started
+title: The Terminal
 prev_page:
-  title: Introduction
-  path: /introduction
-next_page:
-  title: Getting Started
-  path: /getting_started
+  title: Switching Applications
+  path: /getting-started/switching-applications
 ---
 
 <h2 id="terminal">The Terminal</h2>
@@ -19,4 +16,40 @@ next_page:
 
 <img src="/images/matrix.png" alt="The Matrix" style="margin: 20px auto">
 
-<p>But don't worry! One of the first things we'll do is get you acccustomed to working in the command-line environment. The program in the first picture is called a <strong>Terminal</strong>. Mac OS X comes with a program named.
+<p>But don't worry! One of the first things we'll do is get you acccustomed to working in the command-line environment. The program in the first picture is called a <strong>Terminal</strong>. The name comes from the days of computer when you used a physical monitor and keyboard connected to a mainframe, that looked something like this:</p>
+
+<img src="/images/mainframe-terminal.jpg" alt="Mainframe Terminal" />
+
+<p>As computers advanced in capability, you could run a terminal emulator, which just a program that emulates the physical terminal. Over the years, the use of a command-line interface has still proved to be useful for programmers.</p>
+
+<p>Mac OS X comes with a terminal program named <strong>Terminal</strong> and it works fine, but I recommend a free alternative called <strong>iTerm 2</strong>. Download iTerm 2 from <a href="http://www.iterm2.com">www.iterm2.com</a> and <a href="/getting-started/installing-applications#copy-app">copy the application into your Applications folder</a>. Once you launch iTerm, it will look something like this:</p>
+
+<center><img src="/images/iterm.png" alt="iTerm" /></center>
+
+<p>Notice the cursor is positioned just after the <code>$</code> character. This is called the <strong>prompt</strong>. You can type something there and press enter and the terminal will run your program, display the output. Throughout the rest of this book, when you should do something at the command-line, you will see this:</p>
+
+{% highlight bash %}
+$ ls -l /
+total 16445
+drwxrwxr-x+ 66 root  admin     2244 Jan 22 21:55 Applications
+drwxr-xr-x+ 62 root  wheel     2108 Jan 20 09:26 Library
+drwxr-xr-x@  2 root  wheel       68 Sep 12 15:10 Network
+drwxr-xr-x+  4 root  wheel      136 Oct 31 02:49 System
+lrwxr-xr-x   1 root  wheel       49 Dec 27 11:35 User Information -> /Library/Documentation/User Information.localized
+drwxr-xr-x   5 root  admin      170 Dec 27 11:40 Users
+drwxrwxrwt@  3 root  admin      102 Jan 21 20:45 Volumes
+drwxr-xr-x@ 39 root  wheel     1326 Oct 31 02:50 bin
+drwxrwxr-t@  2 root  admin       68 Sep 12 15:09 cores
+dr-xr-xr-x   3 root  wheel     4351 Jan 20 09:12 dev
+lrwxr-xr-x@  1 root  wheel       11 Oct 31 02:44 etc -> private/etc
+dr-xr-xr-x   2 root  wheel        1 Jan 23 08:24 home
+-rwxr-xr-x@  1 root  wheel  8393032 Sep 29 22:39 mach_kernel
+dr-xr-xr-x   2 root  wheel        1 Jan 23 08:24 net
+drwxr-xr-x@  6 root  wheel      204 Oct 31 02:51 private
+drwxr-xr-x@ 62 root  wheel     2108 Jan  2 16:11 sbin
+lrwxr-xr-x@  1 root  wheel       11 Oct 31 02:44 tmp -> private/tmp
+drwxr-xr-x@ 12 root  wheel      408 Dec 27 11:45 usr
+lrwxr-xr-x@  1 root  wheel       11 Oct 31 02:44 var -> private/var
+{% endhighlight %}
+
+<p>The <code>$</code> indicates that is the command you type after the prompt, and then the result of the command is shown.</p>
